@@ -1,0 +1,43 @@
+# Practical 3
+# Operations on Python Lists
+
+numbers = [10, 20, 30, 40, 50]
+
+print("Original list:", numbers)
+
+# Accessing values
+print("First element:", numbers[0])
+print("Last element:", numbers[-1])
+
+# Slicing
+print("Sliced list:", numbers[1:4])
+
+# Updating
+numbers[2] = 35
+print("Updated list:", numbers)
+
+# Adding
+numbers.append(60)
+numbers.insert(1, 15)
+print("After insertion:", numbers)
+
+# Removing
+numbers.remove(40)
+del numbers[0]
+print("After deletion:", numbers)
+
+# Built-in functions
+print("Length:", len(numbers))
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+print("Sum:", sum(numbers))
+
+# Sorting
+numbers.sort()
+print("Sorted list:", numbers)
+
+# Reverse
+numbers.reverse()
+print("Reversed list:", numbers)
+
+print("\nProgram executed successfully.")

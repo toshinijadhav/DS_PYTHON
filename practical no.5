@@ -1,0 +1,43 @@
+# Practical 5
+# Built-in and User-defined Modules
+
+import math
+from functools import reduce
+import my_module
+
+# =========================
+# Math Module
+# =========================
+
+print("=== Math Module ===")
+
+num = 16
+
+print("Square root:", math.sqrt(num))
+print("Factorial:", math.factorial(5))
+print("Power:", math.pow(2, 3))
+print("Log:", math.log(10))
+
+# =========================
+# Functional Programming
+# =========================
+
+print("\n=== Reduce Function ===")
+
+numbers = [1, 2, 3, 4, 5]
+
+result = reduce(lambda x, y: x + y, numbers)
+
+print("Numbers:", numbers)
+print("Sum using reduce:", result)
+
+# =========================
+# User-defined Module
+# =========================
+
+print("\n=== User-defined Module ===")
+
+print("Addition:", my_module.add(5, 3))
+print("Multiplication:", my_module.multiply(4, 2))
+
+print("\nProgram executed successfully.")

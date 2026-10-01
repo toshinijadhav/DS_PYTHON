@@ -1,0 +1,82 @@
+# Practical 6
+# NumPy Array Operations
+
+import numpy as np
+
+# =========================
+# Array Creation
+# =========================
+
+print("=== Array Creation ===")
+
+arr = np.array([1, 2, 3, 4, 5])
+
+print("Array:", arr)
+
+# Special arrays
+print("\nZeros:")
+print(np.zeros((2, 2)))
+
+print("\nOnes:")
+print(np.ones((3, 3)))
+
+print("\nFull:")
+print(np.full((2, 2), 7))
+
+print("\nRandom:")
+print(np.random.rand(2, 2))
+
+# =========================
+# Indexing and Slicing
+# =========================
+
+print("\n=== Indexing and Slicing ===")
+
+arr2 = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+print("Array:")
+print(arr2)
+
+print("Element at row 1, column 2:", arr2[1][2])
+
+print("Slice:")
+print(arr2[0:2, 1:3])
+
+# =========================
+# Reshaping
+# =========================
+
+print("\n=== Reshaping ===")
+
+new_arr = arr2.reshape(1, 9)
+
+print("Reshaped array:")
+print(new_arr)
+
+# =========================
+# Mathematical Operations
+# =========================
+
+print("\n=== Array Operations ===")
+
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+
+print("Mean:", np.mean(a))
+print("Sum:", np.sum(b))
+print("Maximum:", np.max(b))
+print("Minimum:", np.min(b))
+
+print("\nSquare root:")
+print(np.sqrt(np.array([1, 4, 9, 16])))
+
+print("\nProgram executed successfully.")
